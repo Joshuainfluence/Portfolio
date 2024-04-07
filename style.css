@@ -1,20 +1,21 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background-color: #1f242d;
     color: #fff;
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding:20px 10%;
+    padding: 20px 10%;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -22,7 +23,7 @@ body{
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 25px;
     color: #fff;
     text-decoration: none;
@@ -33,7 +34,7 @@ body{
     animation: slideRight 1s ease forwards;
 }
 
-.navbar a{
+.navbar a {
     display: inline-block;
     font-size: 18px;
     text-decoration: none;
@@ -42,25 +43,27 @@ body{
     margin-left: 35px;
     opacity: 0;
     animation: slideTop .5s ease forwards;
-animation-delay: calc(.2s * var(--i));
+    animation-delay: calc(.2s * var(--i));
 }
 
 .navbar a:hover,
-.navbar a.active{
+.navbar a.active {
     color: #0ef;
 }
-.home-img img{
+
+.home-img img {
     max-width: 450px;
     margin-right: -20px;
     opacity: 0;
     animation: zoomIn 1s ease forwards;
     animation-delay: 2s;
 }
-.home-content{
+
+.home-content {
     max-width: 600px;
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
@@ -69,7 +72,7 @@ animation-delay: calc(.2s * var(--i));
     animation-delay: 1s;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 32px;
     font-weight: 700;
     opacity: 0;
@@ -77,24 +80,25 @@ animation-delay: calc(.2s * var(--i));
     animation-delay: .7s;
 }
 
-.home-content h3:nth-of-type(2){
+.home-content h3:nth-of-type(2) {
     margin-bottom: 30px;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
 
-.home-content p{
+.home-content p {
     font-size: 16px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
-.home-content h3 span{
+
+.home-content h3 span {
     color: #0ef;
 }
 
-.home{
+.home {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -104,55 +108,66 @@ animation-delay: calc(.2s * var(--i));
     padding: 70px 10% 0;
 }
 
+.about{
+    width: 100%;
+    height: 100vh;
+}
+
 @keyframes slideRight {
-    0%{
+    0% {
         transform: translateX(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
 
 @keyframes slideLeft {
-    0%{
+    0% {
         transform: translateX(100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
+
 @keyframes slideTop {
-    0%{
+    0% {
         transform: translateY(100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
 @keyframes slideBottom {
-    0%{
+    0% {
         transform: translateY(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
 @keyframes zoomIn {
-    0%{
+    0% {
         transform: scale(0);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: scale(1);
         opacity: 1;
     }
