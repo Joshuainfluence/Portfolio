@@ -5,9 +5,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --primary-color: #1f242d;
+    --secondary-color: #fff;
+
+}
+
+.light-theme{
+
+    --primary-color: #edf3fc;
+    --secondary-color: #000;
+}
+
 body {
-    background-color: #1f242d;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .header {
@@ -16,7 +28,8 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    /* background: transparent; */
+    background: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +38,7 @@ body {
 
 .logo {
     font-size: 25px;
-    color: #fff;
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: 600;
     cursor: default;
@@ -39,7 +52,7 @@ body {
     font-size: 18px;
     text-decoration: none;
     font-weight: 500;
-    color: #fff;
+    color: var(--secondary-color);
     margin-left: 35px;
     opacity: 0;
     animation: slideTop .5s ease forwards;
@@ -60,6 +73,13 @@ body {
 }
 
 .home-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-content {
     max-width: 600px;
 }
 
@@ -67,6 +87,7 @@ body {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
+    /* text-align: center; */
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
@@ -108,9 +129,19 @@ body {
     padding: 70px 10% 0;
 }
 
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+
 .about{
     width: 100%;
     height: 100vh;
+    position: relative;
+    padding: 70px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @keyframes slideRight {

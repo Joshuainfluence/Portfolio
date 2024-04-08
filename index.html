@@ -17,23 +17,24 @@
             <a href="" style="--i:3;">Experience</a>
             <a href="" style="--i:4;">Projects</a>
             <a href="" style="--i:5;">Testimonials</a>
+            <img src="amy.jpeg" alt="" id="icon">
         </nav>
     </header>
     <section class="home">
         <div class="home-content">
             <h3>Hi, it's me</h3>
             <h1>Influence</h1>
-            <h3>And i'm a <span class="multiple-text"></span></h3>
+            <h3>And I-'m a <span class="multiple-text"></span></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eaque, consectetur voluptate eos,
                 voluptas quia quibusdam illo voluptatum beatae unde atque odio quos esse facere ipsam ullam. Incidunt,
                 quis saepe!</p>
         </div>
-        <div class="home-img">
+        <!-- <div class="home-img">
             <img src="Screenshot 2023-12-26 081313.png" alt="">
-        </div>
+        </div> -->
     </section>
     <section class="about" id="about">
-        <div class="home-content">
+        <div class="about-content">
             <h3>Hi, it's me</h3>
             <h1>Influence</h1>
             <h3>And i'm a <span class="multiple-text"></span></h3>
@@ -47,6 +48,17 @@
     </section>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="app.js"></script>
+    <script>
+        var icon = document.getElementById('icon');
+        icon.onclick = function () {
+            document.body.classList.toggle("light-theme");
+            if (document.body.classList.contains("light-theme")) {
+                icon.src = "Screenshot 2023-12-26 081313.png"
+            }else{
+                icon.src = "amy.jpeg"
+            }
+        }
+    </script>
 </body>
 
 </html>
