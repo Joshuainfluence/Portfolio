@@ -12,49 +12,120 @@
     <header class="header">
         <a href="" class="logo">Influence</a>
         <nav class="navbar">
-            <a href="" class="active" style="--i:1;">Home</a>
-            <a href="#about" style="--i:2;">About</a>
-            <a href="" style="--i:3;">Experience</a>
-            <a href="" style="--i:4;">Projects</a>
-            <a href="" style="--i:5;">Testimonials</a>
-            <img src="amy.jpeg" alt="" id="icon">
+            <div class="lg-menu">
+                <a href="" class="active" style="--i:1;">Home</a>
+                <a href="#about" style="--i:2;">About</a>
+                <a href="#experience" style="--i:3;">Experience</a>
+                <a href="#project" style="--i:4;">Projects</a>
+                <a href="" style="--i:5;">Testimonials</a>
+                <img src="amy.jpeg" class="img-theme" alt="" id="icon">
+            </div>
+            <button id="menu-btn" class="hamburger">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+
+            </button>
+            <div class="sm-menu hidden" id="menu">
+                <a href="" class="active" style="--i:1;">Home</a>
+                <a href="#about" style="--i:2;">About</a>
+                <a href="#experience" style="--i:3;">Experience</a>
+                <a href="#project" style="--i:4;">Projects</a>
+                <a href="" style="--i:5;">Testimonials</a>
+            </div>
+            
         </nav>
+       
+       
     </header>
+   
     <section class="home">
         <div class="home-content">
             <h3>Hi, it's me</h3>
             <h1>Influence</h1>
-            <h3>And I-'m a <span class="multiple-text"></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eaque, consectetur voluptate eos,
-                voluptas quia quibusdam illo voluptatum beatae unde atque odio quos esse facere ipsam ullam. Incidunt,
-                quis saepe!</p>
+            <h3> <span class="multiple-text"></span></h3>
+            <p>Aside logical reasoning and problem solving., ability to write solid code is a quality of a good programmer!</p>
+            <p>Programming is Interesting, Speaking from Experience!</p>
         </div>
         <!-- <div class="home-img">
             <img src="Screenshot 2023-12-26 081313.png" alt="">
         </div> -->
     </section>
     <section class="about" id="about">
+
         <div class="about-content">
+
             <h3>Hi, it's me</h3>
             <h1>Influence</h1>
             <h3>And i'm a <span class="multiple-text"></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eaque, consectetur voluptate eos,
-                voluptas quia quibusdam illo voluptatum beatae unde atque odio quos esse facere ipsam ullam. Incidunt,
-                quis saepe!</p>
+            <p>I am currently a Computer Science at Delta State Univeristy, Nigeria. </p>
         </div>
         <div class="home-img">
-            <img src="Screenshot 2023-12-26 081313.png" alt="">
+            <img src="influence.png" alt="">
         </div>
     </section>
+
+    <section class="experience" id="experience">
+        <div class="experience-content">
+            <h3>
+                <a href="https://www.delsu.com.ng" target="_blank">Delta state Univeristy, Nigeria</a>
+            </h3>
+            <div class="row">
+                <div class="company-logo">
+                    <a href="https://www.delsu.com.ng" target="_blank">
+                        <img src="delsu.jpg" alt="">
+                    </a>
+                </div>
+                <div class="company-text">
+                    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa cumque ad cupiditate consectetur
+                        odit! Nihil delectus sed, architecto, aspernatur earum ipsam, totam commodi enim consectetur
+                        error consequuntur eligendi facilis asperiores.
+                        Laborum a laboriosam voluptates quo fugit, ab adipisci minima at eveniet rem atque in quasi
+                        velit sapiente commodi cupiditate quas minus sint laudantium ad omnis similique praesentium
+                        voluptate. Blanditiis, libero.
+                        Sed esse autem laboriosam vero voluptate quo? Voluptates sint dolorem quia aspernatur amet
+                        placeat et accusantium dolorum provident minima consequatur distinctio nam doloremque
+                        exercitationem recusandae impedit, animi numquam maxime totam! </h4>
+                </div>
+            </div>
+            <h3>
+                <a href="https://www.megamindsetsolutions.com/" target="_blank">Megamindset ICT solutions</a>
+            </h3>
+            <div class="row">
+                <div class="company-logo">
+                    <a href="https://www.megamindsetsolutions.com/" target="_blank">
+                        <img src="MEGA.jpg" alt="">
+                    </a>
+                </div>
+                <div class="company-text">
+                    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa cumque ad cupiditate consectetur
+                        odit! Nihil delectus sed, architecto, aspernatur earum ipsam, totam commodi enim consectetur
+                        error consequuntur eligendi facilis asperiores.
+                        Laborum a laboriosam voluptates quo fugit, ab adipisci minima at eveniet rem atque in quasi
+                        velit sapiente commodi cupiditate quas minus sint laudantium ad omnis similique praesentium
+                        voluptate. Blanditiis, libero.
+                        Sed esse autem laboriosam vero voluptate quo? Voluptates sint dolorem quia aspernatur amet
+                        placeat et accusantium dolorum provident minima consequatur distinctio nam doloremque
+                        exercitationem recusandae impedit, animi numquam maxime totam! </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project" class="project">
+
+    </section>
+    <!-- javascript link for the typing effect -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
+
+    <!-- javasacript code for light and dark theme toggle -->
     <script>
         var icon = document.getElementById('icon');
         icon.onclick = function () {
             document.body.classList.toggle("light-theme");
             if (document.body.classList.contains("light-theme")) {
                 icon.src = "Screenshot 2023-12-26 081313.png"
-            }else{
+            } else {
                 icon.src = "amy.jpeg"
             }
         }
