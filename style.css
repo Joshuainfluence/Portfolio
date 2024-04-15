@@ -8,13 +8,21 @@
 :root {
     --primary-color: #1f242d;
     --secondary-color: #fff;
-
+    --multiple: #0ef;
 }
+
 
 .light-theme {
 
     --primary-color: #edf3fc;
     --secondary-color: #000;
+    --multiple: #0ef;
+}
+
+.hack-theme{
+    --primary-color: #000;
+    --secondary-color: rgb(0, 179, 0);
+    --multiple: rgb(255, 8, 8);
 }
 
 body {
@@ -61,7 +69,7 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-    color: #0ef;
+    color: var(--multiple);
 }
 
 .home-img {
@@ -133,7 +141,7 @@ body {
 }
 
 .home-content h3 span {
-    color: #0ef;
+    color: var(--multiple);
 }
 
 .home {
@@ -150,6 +158,12 @@ body {
     width: 30px;
     cursor: pointer;
 }
+
+#hack {
+    width: 30px;
+    cursor: pointer;
+}
+
 
 .about {
     width: 100%;
@@ -178,6 +192,12 @@ body {
 
 .row .company-logo {
     width: 30%;
+}
+
+.about-content h3{
+    text-align: center;
+    font-size: 33px;
+    padding: 0 0 1rem 0;
 }
 
 .row .company-text {
@@ -214,11 +234,36 @@ body {
 .project {
     width: 100%;
     height: 100vh;
+    padding: 70px 10%;
 }
 
+.project .row{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 0;
+    justify-content: center;
+}
+.project .row .col-project{
+    width: 30%;
+    height: 300px;
+    border: 3px solid #3e4466;
+    box-shadow: 0 0 0 1px #3e4466;
+    margin: 3rem 0.5rem -2.5rem 0;
+    /* padding: 1rem 10% 0 0; */
+    background: #3e4466;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    
+
+}
 .navbar .sm-menu {
     display: none;
 }
+
+
 
 @keyframes slideRight {
     0% {
@@ -281,6 +326,9 @@ body {
 }
 
 @media screen and (max-width:992px) {
+    .about{
+        height: 850px;
+    }
     .row {
         width: 100%;
         display: flex;
@@ -399,7 +447,7 @@ body {
     }
 
     .home-content h1 {
-        font-size: 40px;
+        font-size: 46px;
         font-weight: 700;
         margin: -3px 0;
         /* text-align: center; */
@@ -409,14 +457,14 @@ body {
     }
 
     .home-content h3 {
-        font-size: 23px;
+        font-size: 33px;
         font-weight: 700;
         opacity: 0;
         animation: slideBottom 1s ease forwards;
         animation-delay: .7s;
     }
     .home-content p {
-        font-size: 16px;
+        font-size: 24px;
         font-weight: 400;
         text-align: center;
       
@@ -424,6 +472,16 @@ body {
 
     .about{
         flex-direction: column;
+    }
+
+    .experience{
+        width: 100%;
+        height: 1400px;
+    }
+
+    .project{
+        width: 100%;
+        height: 1300px;
     }
 
     .about-content{
@@ -437,6 +495,7 @@ body {
     .about-content p{
         text-align: justify;
     }
+    
 
     .home-img{
         width: 100%;
@@ -456,5 +515,12 @@ body {
     .company-text h4{
       
         text-align: justify;
+    }
+.project .row{
+    padding: 0 2rem 0 2rem;
+    display: block;
+}
+    .project .row .col-project{
+        width: 100%;
     }
 }

@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Influence</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -18,7 +19,8 @@
                 <a href="#experience" style="--i:3;">Experience</a>
                 <a href="#project" style="--i:4;">Projects</a>
                 <a href="" style="--i:5;">Testimonials</a>
-                <img src="amy.jpeg" class="img-theme" alt="" id="icon">
+                <img src="SL-121222-54480-22-removebg-preview (1).png" class="img-theme" alt="" id="icon">
+                <img src="SL-121222-54480-22-removebg-preview (3).png" class="img-theme" alt="" id="hack">
             </div>
             <button id="menu-btn" class="hamburger">
                 <span class="hamburger-top"></span>
@@ -33,18 +35,19 @@
                 <a href="#project" style="--i:4;">Projects</a>
                 <a href="" style="--i:5;">Testimonials</a>
             </div>
-            
+
         </nav>
-       
-       
+
+
     </header>
-   
+
     <section class="home">
         <div class="home-content">
             <h3>Hi, it's me</h3>
             <h1>Influence</h1>
             <h3> <span class="multiple-text"></span></h3>
-            <p>Aside logical reasoning and problem solving., ability to write solid code is a quality of a good programmer!</p>
+            <p>Aside logical reasoning and problem solving., ability to write solid code is a quality of a good
+                programmer!</p>
             <p>Programming is Interesting, Speaking from Experience!</p>
         </div>
         <!-- <div class="home-img">
@@ -55,13 +58,20 @@
 
         <div class="about-content">
 
-            <h3>Hi, it's me</h3>
-            <h1>Influence</h1>
-            <h3>And i'm a <span class="multiple-text"></span></h3>
+            <!-- <h3>Hi, it's me</h3>
+            <h1>Influence</h1> -->
+            <!-- <h3>And i'm a <span class="multiple-text"></span></h3> -->
+            <h3 class="about-text">About me</h3>
             <p>I am currently a Computer Science at Delta State Univeristy, Nigeria. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, incidunt aperiam dolor necessitatibus
+                cumque voluptatibus veritatis tempora, laborum distinctio dolorem molestiae. Commodi soluta enim
+                repellendus vel. Dolore quas nobis tenetur?
+                Aperiam quidem illo amet. Reiciendis odit, nostrum quasi, suscipit ullam possimus ab quibusdam debitis
+                inventore esse, dolorem voluptate laborum sunt nam doloremque quia accusamus eligendi perferendis
+                tenetur alias unde laboriosam?</p>
         </div>
         <div class="home-img">
-            <img src="influence.png" alt="">
+            <img src="influence-removebg-preview.png" alt="">
         </div>
     </section>
 
@@ -112,23 +122,51 @@
         </div>
     </section>
     <section id="project" class="project">
+        <div class="row">
+            <div class="col-project">
+                hello0
+            </div>
+            <div class="col-project">
 
+            </div>
+            <div class="col-project">
+
+            </div>
+            <div class="col-project">
+
+            </div>
+            <div class="col-project">
+
+            </div>
+            <div class="col-project">
+
+            </div>
+            <div class="col-project">
+
+            </div>
+            <div class="col-project">
+
+            </div>
+            <div class="col-project">
+
+            </div>
+
+        </div>
     </section>
     <!-- javascript link for the typing effect -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="app.js" defer></script>
 
     <!-- javasacript code for light and dark theme toggle -->
+    <script src="theme.js"></script>
     <script>
-        var icon = document.getElementById('icon');
-        icon.onclick = function () {
-            document.body.classList.toggle("light-theme");
-            if (document.body.classList.contains("light-theme")) {
-                icon.src = "Screenshot 2023-12-26 081313.png"
-            } else {
-                icon.src = "amy.jpeg"
-            }
-        }
+        ScrollReveal({ 
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400 
+        });
+        ScrollReveal().reveal('.about-text', { delay: 500, origin: 'left' });
     </script>
 </body>
 
