@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* padding: top right bottom lerf; */
 }
 
 :root {
@@ -203,6 +204,35 @@ body {
     padding: 0 0 1rem 0;
 }
 
+.about-content h4 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0 0 1rem 0;
+    margin: 1rem 0 0 0;
+}
+
+.about-content .row {
+   width: 100%;
+   display: flex;
+}
+.about-content .row .col{
+    width: 33%;
+ }
+
+.about-content ul {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0 0 1rem 0;
+    margin: 1rem 0 0 0;
+}
+
+.about-content ul li {
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0 0 0 0;
+    margin: 1rem 0 0 0;
+}
+
 .row .company-text {
     display: flex;
     justify-content: center;
@@ -236,7 +266,7 @@ body {
 
 .project {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 70px 10%;
 }
 
@@ -266,6 +296,70 @@ body {
 
 .navbar .sm-menu {
     display: none;
+}
+
+
+.col-project .top {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 10% 0 10%;
+
+}
+
+.col-project .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 10% 0 10%;
+
+}
+
+.col-project .body {
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    padding: 1.4rem 10% 0 10%;
+
+}
+
+.col-project .conclusion {
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    padding: 1.4rem 10% 0 10%;
+
+}
+
+.col-project .top a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 2.3rem;
+}
+
+.col-project .top a:hover {
+    color: var(--multiple);
+    text-decoration: none;
+    font-size: 2.3rem;
+}
+
+.footer{
+    width: 100%;
+  
+    /* flex-direction: column; */
+    justify-content: center;
+    margin: 0 0 2rem 0;
+}
+.footer p{
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 
@@ -503,6 +597,14 @@ body {
         text-align: justify;
     }
 
+    .about-content .row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+     }
+     .about-content .row .col{
+         width: 33%;
+      }
 
     .home-img {
         width: 100%;
