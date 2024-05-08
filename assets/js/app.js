@@ -9,12 +9,12 @@ var typed = new Typed(".multiple-text", {
 // link https://github.com/mattboldt/typed.js
 
 
-const btn = document.getElementById("menu-btn")
-const nav = document.getElementById("menu")
+// const btn = document.getElementById("menu-btn")
+// const nav = document.getElementById("menu")
 
-btn.addEventListener('click', () => {
-    btn.classList.toggle('open')
-    nav.classList.toggle('visibility')
-    nav.classList.toggle('hidden')
+// btn.addEventListener('click', () => {
+//     btn.classList.toggle('open')
+//     nav.classList.toggle('visibility')
+//     nav.classList.toggle('hidden')
 
-})
+// })
