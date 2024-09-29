@@ -3,22 +3,35 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
     /* padding: top right bottom lerf; */
 }
 
 :root {
-    --primary-color: #000;
+    /* --primary-color: #000; */
+    --primary-color: linear-gradient(30deg, black, green, black);
+
+
+
     --secondary-color: rgb(0, 179, 0);
+
     --multiple: rgb(255, 8, 8);
     --project: #19191a;
+    --hover: linear-gradient(green, black);
 }
 
 .hack-theme {
-    --primary-color: #1f242d;
+    /* --primary-color: #1f242d; */
+    --primary-color: linear-gradient(90deg, #1f242d, #0ef, #1f242d);
+
     --secondary-color: #fff;
     --multiple: #0ef;
     --project: #3e4466;
-    --hover: #1f242d;
+    /* --project: linear-gradient(red, black); */
+
+    --hover: linear-gradient(#0ef, #3e4466);
+
+
 }
 
 
@@ -33,7 +46,7 @@
 
 
 body {
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     color: var(--secondary-color);
 }
 
@@ -78,6 +91,11 @@ body {
 .navbar a.active {
     color: var(--multiple);
 } */
+
+/* .home{
+    background: var(--primary-color);
+} */
+
 
 .home-img {
     width: 50%;
@@ -148,7 +166,7 @@ body {
     color: var(--secondary-color);
 }
 
-.home-content p a i:hover{
+.home-content p a i:hover {
     color: var(--multiple);
 }
 
@@ -314,7 +332,16 @@ body {
     background: var(--project);
     backdrop-filter: blur(20px);
     border-radius: 15px;
+    transition: 0.3s ease-out;
+    scale: 1;
 
+}
+
+.project .row .col-project:hover {
+    background: var(--hover);
+    scale: 1;
+    /* border: 1px solid var(--hover); */
+    border: 0;
 
 }
 
