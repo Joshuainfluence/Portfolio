@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    @import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+    font-family: Nunito;
 }
 
 
@@ -28,8 +30,8 @@ header {
     width: 100%;
     height: 70px;
     z-index: 9999;
-    /* background: var(--primary-color); */
-    background: transparent;
+    background: var(--primary-color);
+    /* background: transparent; */
     backdrop-filter: blur(1rem);
     /* background-color: #f6e6e6; */
     /* background: #000; */
@@ -50,7 +52,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0 0 0 ;
+    padding: 1rem 0 0 1.5rem ;
 }
 
 .tabs {
@@ -166,7 +168,7 @@ nav {
         /* background-color: var(--primary-color); */
         /* background-color: var(--project); */
         /* background: var(--primary-color); */
-        background: transparent;
+        background: var(--primary-color);
         backdrop-filter: blur(1rem);
         /* border: 2px solid red; */
 
