@@ -157,6 +157,7 @@ nav {
     }
 
     .tabs ul {
+        transition: 1s;
         /* display: none; */
         width: 100%;
         height: 100vh;
@@ -175,12 +176,20 @@ nav {
         /* visibility: hidden; */
     }
 
-    .show {
+    /* .show {
         visibility: visible;
     }
 
     .hide {
         visibility: hidden;
+    } */
+
+    .show {
+        opacity: 1;
+    }
+
+    .hide {
+        opacity: 0;
     }
 
     .open {
